@@ -27,18 +27,19 @@ const TypewriterApp = () => {
   };
 
   return (
-    <div class="flex flex-col items-center justify-center w-40 h-20">
-      <button
-        onClick={toggleTypewriterSound}
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        {typewriterEnabled ? "Disable" : "Enable"} Typewriter Sound
-      </button>
-      <textarea
-        class="mt-4 border rounded-md px-4 py-2"
-        placeholder="Type here..."
-      ></textarea>
-    </div>
+    <>
+      <div className="bg-gray-900  p-6 shadow-md m-auto rounded-sm">
+        <h2 className="text-lg font-bold text-white mb-4">
+          Typewriter Extension
+        </h2>
+        <button
+          onClick={toggleTypewriterSound}
+          className="bg-green-500 text-white py-2 px-4 rounded-lg text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          {typewriterEnabled ? "Disable" : "Enable"}
+        </button>
+      </div>
+    </>
   );
 };
 
