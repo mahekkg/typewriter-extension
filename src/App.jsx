@@ -1,13 +1,12 @@
-import './App.css'
-import TypewriterApp from './typewriter'
+import "./App.css";
+import TypewriterApp from "./Typewriter";
 
 function App() {
-
   return (
     <>
-    <TypewriterApp/>
+      <TypewriterApp />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
